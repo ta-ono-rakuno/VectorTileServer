@@ -1,17 +1,24 @@
-{
-  "version": 8,
-  "name": "GSI test",
-  "sources": {
-    "s": {
-      "type": "vector",
-      "url": "https://ta-ono-rakuno.github.io/VectorTileServer/",
-      "minZoom": 4,
-      "maxZoom": 16
-    }
-  },
-  "sprite": "https://gsi-cyberjapan.github.io/gsivectortile-mapbox-gl-js/sprite/std",
-  "glyphs": "https://maps.gsi.go.jp/xyz/noto-jp/{fontstack}/{range}.pbf",
-  "layers": [
+{"version": 8,"name": "Vector","metadata": {},
+
+
+"sources": {"gsibv-vectortile-source-1-4-16": {"type": "vector",
+
+"url": "https://ta-ono-rakuno.github.io/VectorTileServer/",
+
+
+"tiles": ["https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"], 
+
+
+"attribution": "<a href='https://maps.gsi.go.jp/vector/' target='_blank'>地理院地図Vector（仮称）</a>"}}, 
+
+
+"sprite": "https://gsi-cyberjapan.github.io/gsivectortile-mapbox-gl-js/sprite/std", 
+
+
+"glyphs": "https://cyberjapandata.gsi.go.jp/xyz/noto-jp/{fontstack}/{range}.pbf","layers": [
+
+
+
 
 
 {"metadata":{"layer-id":"layer-37","title":"砂礫地（領域が不明瞭な場合）","path":"地形-砂礫地（領域が不明瞭な場合）","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"landformp","minzoom":14,"maxzoom":17,"filter":["all",["==","ftCode",7601]],"layout":{"icon-image":"砂礫地（領域が不明瞭な場合）-20","icon-pitch-alignment":"viewport","icon-rotation-alignment":"viewport","icon-size":{"stops":[[14,0.5],[16,1]]},"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","icon-allow-overlap":true,"text-keep-upright":true,"text-allow-overlap":false,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-1"},
@@ -883,8 +890,4 @@
 {"metadata":{"layer-id":"layer-436","title":"水準点","path":"記号-水準点","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"symbol","minzoom":14,"maxzoom":17,"filter":["all",["==","ftCode",7103]],"paint":{"text-color":"rgba(0,0,0,1)","text-halo-color":"rgba(255,255,255,1)","text-halo-width":1},"layout":{"icon-size":{"stops":[[14,0.4],[15,0.8],[16,1],[17,1]]},"icon-image":"水準点","icon-anchor":"center","text-anchor":"left","text-offset":[0.8,-0.1],"icon-pitch-alignment":"viewport","icon-rotation-alignment":"viewport","text-pitch-alignment":"viewport","text-rotation-alignment":"viewport","icon-allow-overlap":true,"text-size":{"stops":[[14,10],[15,18],[16,30],[17,30]]},"text-field":["to-string",["case",["!",["has","alti"]],["to-string",""],["==",["get","alti"],""],["to-string",""],["in",".",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]]],["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],["concat",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],".0"]]],"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","text-keep-upright":true,"text-allow-overlap":false,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-869"},
 {"metadata":{"layer-id":"layer-437","title":"電子基準点","path":"記号-電子基準点","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"symbol","minzoom":11,"maxzoom":14,"filter":["all",["==","ftCode",7101]],"layout":{"icon-anchor":"center","icon-image":"電子基準点-20","icon-pitch-alignment":"viewport","icon-rotation-alignment":"viewport","icon-size":0.5,"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","icon-allow-overlap":true,"text-keep-upright":true,"text-allow-overlap":false,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-870"},
 {"metadata":{"layer-id":"layer-438","title":"電子基準点","path":"記号-電子基準点","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"symbol","minzoom":14,"maxzoom":18,"filter":["all",["==","ftCode",7101],["==","gcpCodeFlag",0]],"layout":{"icon-size":{"stops":[[14,0.4],[15,0.8],[16,1],[17,1]]},"icon-anchor":"center","icon-image":"電子基準点","icon-pitch-alignment":"viewport","icon-rotation-alignment":"viewport","icon-allow-overlap":true,"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","text-keep-upright":true,"text-allow-overlap":false,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-871"},
-{"metadata":{"layer-id":"layer-439","title":"電子基準点(付)","path":"記号-電子基準点(付)","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"symbol","minzoom":14,"maxzoom":18,"filter":["all",["==","ftCode",7101],["==","gcpCodeFlag",1]],"paint":{"text-color":"rgba(0,0,0,1)","text-halo-color":"rgba(255,255,255,1)","text-halo-width":1},"layout":{"text-anchor":"left","text-offset":[0.8,-0.1],"text-pitch-alignment":"viewport","text-rotation-alignment":"viewport","text-allow-overlap":true,"text-size":{"stops":[[14,10],[15,20],[16,30],[17,30]]},"text-field":["to-string",["case",["!",["has","alti"]],["to-string",""],["==",["get","alti"],""],["to-string",""],["in",".",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]]],["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],["concat",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],".0"]]],"text-font":["NotoSansCJKjp-Regular"
-  
- ],
-"_ssl":true
-}
+{"metadata":{"layer-id":"layer-439","title":"電子基準点(付)","path":"記号-電子基準点(付)","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"symbol","minzoom":14,"maxzoom":18,"filter":["all",["==","ftCode",7101],["==","gcpCodeFlag",1]],"paint":{"text-color":"rgba(0,0,0,1)","text-halo-color":"rgba(255,255,255,1)","text-halo-width":1},"layout":{"text-anchor":"left","text-offset":[0.8,-0.1],"text-pitch-alignment":"viewport","text-rotation-alignment":"viewport","text-allow-overlap":true,"text-size":{"stops":[[14,10],[15,20],[16,30],[17,30]]},"text-field":["to-string",["case",["!",["has","alti"]],["to-string",""],["==",["get","alti"],""],["to-string",""],["in",".",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]]],["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],["concat",["to-string",["/",["round",["*",["to-number",["get","alti"]],10]],10]],".0"]]],"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","icon-allow-overlap":true,"text-keep-upright":true,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-872"}  ],"id": "gsi-bv"}
