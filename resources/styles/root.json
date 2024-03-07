@@ -4,7 +4,7 @@
   "sources": {
     "s": {
       "type": "vector",
-      "url": "https://www.mapsol.jp/tiriin_vector/",
+      "url": "https://ta-ono-rakuno.github.io/VectorTileServer/",
       "minZoom": 4,
       "maxZoom": 16
     }
