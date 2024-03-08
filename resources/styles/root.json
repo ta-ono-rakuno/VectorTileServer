@@ -7,6 +7,7 @@
   "glyphs": "https://maps.gsi.go.jp/xyz/noto-jp/{fontstack}/{range}.pbf",
   "layers": [
 
+{"metadata":{"layer-id":"layer-37","title":"砂礫地（領域が不明瞭な場合）","path":"地形-砂礫地（領域が不明瞭な場合）","added":1},"type":"symbol","source":"gsibv-vectortile-source-1-4-16","source-layer":"landformp","minzoom":14,"maxzoom":17,"filter":["all",["==","ftCode",7601]],"layout":{"icon-image":"砂礫地（領域が不明瞭な場合）-20","icon-pitch-alignment":"viewport","icon-rotation-alignment":"viewport","icon-size":{"stops":[[14,0.5],[16,1]]},"text-font":["NotoSansCJKjp-Regular"],"symbol-placement":"point","icon-allow-overlap":true,"text-keep-upright":true,"text-allow-overlap":false,"symbol-z-order":"auto","text-max-width":100,"visibility":"visible"},"id":"gsibv-vectortile-layer-1"},
 
 {"metadata":{"layer-id":"layer-4","title":"湿地","path":"地形-湿地","added":1},"type":"fill","source":"gsibv-vectortile-source-1-4-16","source-layer":"landforma","minzoom":8,"maxzoom":14,"filter":["all",["==","ftCode",7401]],"paint":{"fill-color":"rgba(153,238,192,1)"},"id":"gsibv-vectortile-layer-23","layout":{"visibility":"visible"}},
 
