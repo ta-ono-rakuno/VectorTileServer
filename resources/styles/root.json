@@ -2,9 +2,9 @@
   "version": 8,
   "name": "GSI test",
   "sources": {
-    "s": {
+    "gsibv-vectortile-source-1-4-16": {
       "type": "vector",
-      "url": "gsibv-vectortile-source-1-4-16",
+      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf",
       "minZoom": 4,
       "maxZoom": 16
     }
